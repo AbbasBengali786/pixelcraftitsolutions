@@ -1,0 +1,95 @@
+/*
+=================================
+Pixel Craft IT Solutions
+Design System Variables
+=================================
+*/
+
+
+:root {
+
+    /* Light Theme */
+
+    --bg-color: #F8FAFC;
+
+    --card-color: #FFFFFF;
+
+    --card-elevated: #FFFFFF;
+
+    --primary-color: #059669;
+
+    --accent-color: #14B8A6;
+
+    --text-color: #0F172A;
+
+    --text-secondary: #64748B;
+
+    --border-color: #E2E8F0;
+
+
+    /* Effects */
+
+    --shadow:
+        0 10px 40px rgba(15,23,42,0.08);
+
+
+    --glass-background:
+        rgba(255,255,255,0.75);
+
+}
+
+
+
+/*
+=================================
+Dark Theme
+Automatically follows device
+=================================
+*/
+
+
+@media (prefers-color-scheme: dark) {
+
+
+:root {
+
+
+    --bg-color: #020617;
+
+
+    --card-color: #0F172A;
+
+
+    --card-elevated: #1E293B;
+
+
+    --primary-color: #10B981;
+
+
+    --accent-color: #2DD4BF;
+
+
+    --text-color: #F8FAFC;
+
+
+    --text-secondary: #94A3B8;
+
+
+    --border-color: #334155;
+
+
+
+    --shadow:
+        0 10px 40px rgba(0,0,0,0.45);
+
+
+
+    --glass-background:
+        rgba(15,23,42,0.75);
+
+
+
+}
+
+
+}
