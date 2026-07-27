@@ -777,3 +777,107 @@ textarea{
     border-radius:14px;
 
 }
+
+/*
+========================
+Scroll Down Indicator
+========================
+*/
+
+.hero {
+    position: relative;
+}
+
+
+.scroll-down {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 42px;
+
+    height: 60px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding-top: 5px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 25px;
+
+    color: var(--primary-color);
+
+    transition: all .3s ease;
+
+}
+
+
+.scroll-down span {
+
+    width: 12px;
+
+    height: 12px;
+
+    border-right: 2px solid var(--primary-color);
+
+    border-bottom: 2px solid var(--primary-color);
+
+    transform: rotate(45deg);
+
+    animation: scrollArrow 1.8s infinite;
+
+}
+
+
+.scroll-down:hover {
+
+    border-color: var(--primary-color);
+
+    color: var(--accent-color);
+
+    transform: translateX(-50%) translateY(-3px);
+
+}
+
+
+@keyframes scrollArrow {
+
+    0% {
+
+        opacity: 0;
+
+        transform: translateY(0) rotate(45deg);
+
+    }
+
+    30% {
+
+        opacity: 1;
+
+    }
+
+    70% {
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform: translateY(18px) rotate(45deg);
+
+    }
+
+}
